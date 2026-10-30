@@ -2,6 +2,9 @@
 
 Platform dashboard operasional B2B dan analitik e-commerce modern yang dirancang untuk visibilitas data bisnis secara real-time. Dibangun menggunakan Next.js App Router, TypeScript dengan type safety ketat, dan Tailwind CSS tanpa dependensi library visualisasi yang berlebih.
 
+🔗 **Live Demo:** [genz-admin-one.vercel.app](https://genz-admin-one.vercel.app)  
+📂 **Repository:** [github.com/glh304/genz-admin](https://github.com/glh304/genz-admin)
+
 ---
 
 ## Ringkasan Proyek
@@ -68,7 +71,7 @@ src/
 1. Klon repositori ini:
 
    ```bash
-   git clone https://github.com/username/genz-admin.git
+   git clone https://github.com/glh304/genz-admin.git
    cd genz-admin
    ```
 
