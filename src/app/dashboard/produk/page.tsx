@@ -17,21 +17,21 @@ export default async function ProdukPage() {
     const listProduk: Produk[] = data.products;
 
     return (
-      <div className="space-y-6 p-8">
-        <div className="flex items-center justify-between border-b border-slate-200 pb-5">
+      <div className="space-y-6 p-4 sm:p-6 md:p-8">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-slate-200 pb-5 gap-3">
           <div>
-            <span className="text-xs font-bold text-slate-400 uppercase tracking-wider ">
+            <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">
               Manajemen Inventaris
             </span>
-            <h1 className="text-2xl font-black text-slate-900 tracking-tight mt-1">
+            <h1 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mt-1">
               Katalog Produk Toko
             </h1>
           </div>
-          <span className="text-xs font-bold text-slate-600">
+          <span className="text-xs font-bold text-slate-600 px-2.5 py-1 sm:p-0 rounded-lg self-start sm:self-auto">
             12 Barang Tersedia
           </span>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
           {listProduk.map((item) => (
             <div
               key={item.id}
@@ -75,8 +75,8 @@ export default async function ProdukPage() {
     );
   } catch (err) {
     return (
-      <div className="p-8">
-        <div className="bg-white border border-slate-200/80 rounded-2xl p-12 text-center max-w-md mx-auto flex flex-col items-center justify-center shadow-sm">
+      <div className="p-4 sm:p-6 md:p-8">
+        <div className="bg-white border border-slate-200/80 rounded-2xl p-8 sm:p-12 text-center max-w-md mx-auto flex flex-col items-center justify-center shadow-sm">
           <div className="w-20 h-20 rounded-2xl bg-slate-50 border border-slate-200/80 flex items-center justify-center mb-5 text-slate-400">
             <svg
               className="w-10 h-10"

@@ -100,7 +100,7 @@ const dataMetrik: MetrikBisnis[] = [
   {
     judul: "Total Pendapatan",
     nilai: "Rp 48.500.000",
-    tren: "+12.42",
+    tren: "+12.4%",
     keterangan: "Bulan berjalan naik dari Rp 43.1jt bulan lalu",
   },
   {
@@ -119,12 +119,12 @@ const dataMetrik: MetrikBisnis[] = [
 
 export default function DashboardPage() {
   return (
-    <div className="bg-slate-50 min-h-screen p-8 text-slate-900 space-y-8">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="bg-slate-50 min-h-screen p-4 sm:p-6 md:p-8 text-slate-900 space-y-6 md:space-y-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         {dataMetrik.map((item) => (
           <div
             key={item.judul}
-            className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm"
+            className="bg-white border border-slate-200/80 rounded-2xl p-5 sm:p-6 shadow-sm"
           >
             <div className="flex items-center justify-between mb-4">
               <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">
@@ -134,7 +134,7 @@ export default function DashboardPage() {
                 {item.tren}
               </span>
             </div>
-            <div className="text-3xl font-black text-slate-900 tracking-tight">
+            <div className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
               {item.nilai}
             </div>
             <div className="text-xs text-slate-500 mt-2 font-medium">
@@ -143,7 +143,7 @@ export default function DashboardPage() {
           </div>
         ))}
       </div>
-      <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm">
+      <div className="bg-white border border-slate-200/80 rounded-2xl p-5 sm:p-6 shadow-sm">
         <div className="flex items-center justify-between mb-6">
           <div>
             <h2 className="text-base font-bold text-slate-900">
@@ -191,7 +191,7 @@ export default function DashboardPage() {
           ))}
         </div>
       </div>
-      <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm space-y-4">
+      <div className="bg-white border border-slate-200/80 rounded-2xl p-5 sm:p-6 shadow-sm space-y-4">
         <div className="flex items-center justify-between">
           <div>
             <h2 className="text-base font-bold text-slate-900">
@@ -201,12 +201,12 @@ export default function DashboardPage() {
               Aktivitas pesanan masuk secara real-time
             </p>
           </div>
-          <span className="text-xs font-semibold text-slate-500 leading-none">
+          <span className="text-xs font-semibold text-slate-500 leading-none shrink-0">
             4 Pesanan Baru
           </span>
         </div>
-        <div className="overflow-x-auto">
-          <table className="w-full text-left border-collapse">
+        <div className="overflow-x-auto -mx-2 sm:mx-0">
+          <table className="w-full text-left border-collapse min-w-[500px]">
             <thead>
               <tr className="border-b border-slate-200/80 text-xs font-bold text-slate-400 uppercase tracking-wider">
                 <th className="pb-3 pr-4">Pelanggan</th>
